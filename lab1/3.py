@@ -1,0 +1,6 @@
+fvalue = "Karakat"
+f_value = "Karakat"
+_f_value = "Karakat"
+fValue = "Karakat"
+FVALUE = "Karakat"
+fvalue1 = "Karakat"
