@@ -1,12 +1,7 @@
-#what is list
-thislist = ["apple", "banana", "cherry"]
+#what is set
+thislist = {"apple", "banana", "cherry"}
 print(thislist)
-#data types of lists
-list1 = ["apple", "banana", "cherry"]
-list2 = [1, 5, 7, 9, 3]
-list3 = [True, False, False]
-
-#example 1
+#Loop through the set, and print the values:
 thisset = {"apple", "banana", "cherry"}
 
 for x in thisset:
@@ -25,4 +20,24 @@ print(thisset)
 #update sets
 tropical = {"pineapple", "mango", "papaya"}
 thisset.update(tropical)
+print(thisset) #{'mango', 'apple', 'cherry', 'papaya', 'orange', 'banana', 'pineapple'}
+
+#remove sets
+#to remove specific item
+thisset = {"apple", "banana", "cherry"}
+thisset.remove("banana")
 print(thisset)
+#to remove randomj or last element
+thisset = {"apple", "banana", "cherry"}
+x = thisset.pop()
+print(x)
+print(thisset)
+#empties the set
+thisset = {"apple", "banana", "cherry"}
+thisset.clear()
+print(thisset)
+#delete the set completely
+thisset = {"apple", "banana", "cherry"}
+del thisset
+print(thisset)
+

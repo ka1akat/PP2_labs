@@ -14,3 +14,7 @@ girl_gr=["Kakos", "Tomiris", "Akbota"]
 girl_gr.remove("Kakos")
 girl_gr.pop(0)
 print(girl_gr)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
