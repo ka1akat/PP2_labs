@@ -1,4 +1,4 @@
-# Test data
+
 movies = [
     {"name": "Usual Suspects", "imdb": 7.0, "category": "Thriller"},
     {"name": "Hitman", "imdb": 6.3, "category": "Action"},
@@ -16,7 +16,10 @@ movies = [
     {"name": "Exam", "imdb": 4.2, "category": "Thriller"},
     {"name": "We Two", "imdb": 7.2, "category": "Romance"}
 ]
-def is_above_5_5(movie):
-    return movie["imdb"] > 5.5
+def average(category):
+    a = [movie["imdb"] for movie in movies if movie["category"].lower() == category.lower()]
+    return sum(a) / len(a) if a else 0
 
-print(is_above_5_5(movies[0]))
+category = input("Enter the category: ")
+average_score = average(category)
+print(f"The average IMDB score for the category '{category}' is {average_score}")
